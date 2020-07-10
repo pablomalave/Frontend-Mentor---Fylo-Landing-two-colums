@@ -1,0 +1,403 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Contenedores */
+.FlexContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+/* Barra de Navegación */
+
+.NavBar{
+    font-family: 'Raleway', sans-serif;
+}
+
+.NavBar ul{
+    list-style-type: none;
+}
+
+.Nav-Item{
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.Nav-Item a{
+    color: #000;
+    text-decoration: none;
+}
+
+.Nav-Item a:hover{
+    text-decoration: underline;
+}
+
+/* Seccion de Titulo */
+
+#Title::after{
+    content: '';
+    background-image: url("../images/bg-curve-desktop.svg");
+    display: block;
+    height: 114px;
+}
+
+.TitleContainer{
+    align-self: center;
+    width: 50%;
+}
+
+.TitleContainer p{
+    padding-right: 5%;
+    font-size: 1.125rem;
+}
+
+.Illustration{
+    width: 50%;
+    height: 100%;
+    align-self: center;
+}
+
+#Title-Email{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.GSButton{
+    width: 30%;
+    margin: 8px 10px;
+    padding: 12px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 0px solid #000;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.GSButton:hover{
+    background-color: hsl(170, 45%, 43%);
+}
+
+/* Team Container */
+
+#Team{
+    background-color:  #f8f8fe;
+}
+
+
+.TeamContainer{
+    width: 60%;
+}
+
+.Team-Text{
+    padding-right: 15%;
+}
+
+.Workflow-Link{
+    color: hsl(170, 45%, 43%);
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    border-bottom: 1px hsl(170, 45%, 43%) solid;
+    line-height: 1.5;
+    padding-bottom: 5px;
+}
+
+/* Testimonios */
+
+.Author{
+    font-size: 0.675rem;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "avatar name"
+                         "avatar  ocupation";
+    align-items: center;
+}
+
+.Name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    grid-area: name;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.Ocupation{
+    grid-area: ocupation;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.Avatar{
+    border-radius: 100%;
+    grid-area: avatar;
+    width: 100%; 
+}
+
+.testimonial{
+    background-color: #fff;
+    width: 48%;
+    padding: 5%;
+    box-shadow: 0px 0px 5px #8f8f8f;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+.testimonial-text{
+    font-size: 0.875rem;
+    line-height: 2;
+    padding-right: 5%;
+    margin-top: 0;
+}
+
+/* Seccion SignIn */
+#SignIn{
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+}
+
+.Sign-Text{
+    width: 40%;
+}
+
+.Sign-Form{
+    width: 40%;
+}
+
+#Sign-Email{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 0px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.GSButton2{
+    width: 50%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 0px solid #000;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Seccion de Contacto */
+#Contact{
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding: 5%;
+}
+
+.ContactContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "logo . . ."
+                         "info lista1 lista2 social";
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.Whitelogo{
+    grid-area: logo;
+    color: #fff;
+    justify-self: left;
+}
+
+.Contact-Info{
+    grid-area: info;
+    justify-self: left;
+}
+
+.icon{
+    padding-right: 1rem;
+}
+
+.Link-List{
+    list-style: none;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.Link-List a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.Link-List a:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+.List1{
+    grid-area: lista1;
+}
+
+.List2{
+    grid-area: lista2;
+}
+
+.SocialNav{
+    grid-area: social;
+}
+
+.Social-Link{
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.Social-Link:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+/* Pie de Pagina */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+.attribution a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    color: tomato;
+}
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    padding-top: 5%;
+}
+
+/* Responsivo Ancho: 750px */
+@media(max-width: 750px)
+{
+    .FlexContainer{
+        flex-direction: column;
+    }
+
+    #Header{
+        flex-direction: row;
+    }
+
+    .Nav-Item{
+        padding-left: 25px;
+    }
+
+    .TitleContainer, .TeamContainer, .Sign-Text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Illustration{
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    #Title-Email{
+        width: 100%;
+    }
+
+    .GSButton, .GSButton2{
+        width: 100%;
+        margin: 8px 0px;
+    }
+
+    .Team-Text{
+        padding-right: 0;
+    }
+
+    .testimonial, .Sign-Form{
+        margin: 5%;
+        text-align: left;
+        width: auto;
+    }
+
+    .ContactContainer{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "logo"
+                             "info"
+                             "lista1"
+                             "lista2"
+                             "social";
+        justify-items: center;
+        grid-gap: 10px;
+        text-align: center;
+    }
+
+    .Whitelogo, .Contact-Info{
+        justify-self: inherit;
+    }
+
+    .SocialNav{
+        margin-top: 50px;
+    }
+
+}
+
+/* Responsivo Ancho: 400px */
+@media(max-width: 400px){
+
+    h1, h3{
+        font-size: 1.375rem; 
+    }
+
+    .Nav-Item{
+        padding-left: 10px;
+        font-size: 0.875rem;
+    }
+
+    .Logo{
+        height: 30%;
+        width: 30%;
+        align-self: center;
+    }
+
+    .TitleContainer p{
+        font-size: 1rem;
+    }
+
+    #Title::after{
+        content: '';
+        background-image: url("../images/bg-curve-mobile.svg");
+        display: block;
+        height: 50px;
+    }
+
+ }
